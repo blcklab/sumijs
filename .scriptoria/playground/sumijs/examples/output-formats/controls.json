@@ -1,0 +1,37 @@
+[
+  {
+    "id": "text",
+    "label": "Text",
+    "type": "text",
+    "default": "WEB",
+    "required": true
+  },
+  {
+    "id": "font",
+    "label": "Font",
+    "type": "select",
+    "default": "mini",
+    "options": [
+      {
+        "label": "Block",
+        "value": "block"
+      },
+      {
+        "label": "Slant",
+        "value": "slant"
+      },
+      {
+        "label": "Shadow",
+        "value": "shadow"
+      },
+      {
+        "label": "Mini",
+        "value": "mini"
+      },
+      {
+        "label": "Three D",
+        "value": "three-d"
+      }
+    ]
+  }
+]

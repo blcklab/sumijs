@@ -1,0 +1,8 @@
+{
+  "description": "Build framed ASCII art with padding, a title, and selectable borders.",
+  "mode": "hybrid",
+  "editable": true,
+  "output": {
+    "type": "json"
+  }
+}

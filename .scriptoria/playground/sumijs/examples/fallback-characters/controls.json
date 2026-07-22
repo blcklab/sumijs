@@ -1,0 +1,30 @@
+[
+  {
+    "id": "text",
+    "label": "Text",
+    "type": "text",
+    "default": "A\ud83c\udf19B",
+    "required": true,
+    "description": "Unsupported graphemes fall back after an uppercase lookup."
+  },
+  {
+    "id": "fallback",
+    "label": "Fallback glyph",
+    "type": "select",
+    "default": "?",
+    "options": [
+      {
+        "label": "Question mark",
+        "value": "?"
+      },
+      {
+        "label": "Exclamation mark",
+        "value": "!"
+      },
+      {
+        "label": "Asterisk",
+        "value": "*"
+      }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "description": "Render multiple banner lines and adjust the blank rows between them.",
+  "mode": "hybrid",
+  "editable": true,
+  "output": {
+    "type": "json"
+  }
+}

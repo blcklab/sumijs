@@ -1,0 +1,8 @@
+{
+  "description": "Apply an exact output width, alignment, wrapping, clipping, or preservation.",
+  "mode": "hybrid",
+  "editable": true,
+  "output": {
+    "type": "json"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "description": "Catch SumiError and branch on stable error codes instead of message text.",
+  "mode": "hybrid",
+  "editable": true,
+  "output": {
+    "type": "json"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "description": "Compare all five built-in fonts using the same source text.",
+  "mode": "controls",
+  "output": {
+    "type": "json"
+  }
+}

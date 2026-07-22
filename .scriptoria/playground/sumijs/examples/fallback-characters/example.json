@@ -1,0 +1,7 @@
+{
+  "description": "See how unsupported graphemes are replaced without splitting surrogate pairs.",
+  "mode": "controls",
+  "output": {
+    "type": "json"
+  }
+}

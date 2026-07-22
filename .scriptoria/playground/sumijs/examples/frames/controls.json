@@ -1,0 +1,96 @@
+[
+  {
+    "id": "text",
+    "label": "Text",
+    "type": "text",
+    "default": "SUMI",
+    "required": true
+  },
+  {
+    "id": "font",
+    "label": "Font",
+    "type": "select",
+    "default": "mini",
+    "options": [
+      {
+        "label": "Block",
+        "value": "block"
+      },
+      {
+        "label": "Slant",
+        "value": "slant"
+      },
+      {
+        "label": "Shadow",
+        "value": "shadow"
+      },
+      {
+        "label": "Mini",
+        "value": "mini"
+      },
+      {
+        "label": "Three D",
+        "value": "three-d"
+      }
+    ]
+  },
+  {
+    "id": "frame",
+    "label": "Frame style",
+    "type": "select",
+    "default": "rounded",
+    "options": [
+      {
+        "label": "Single",
+        "value": "single"
+      },
+      {
+        "label": "Double",
+        "value": "double"
+      },
+      {
+        "label": "Rounded",
+        "value": "rounded"
+      },
+      {
+        "label": "Heavy",
+        "value": "heavy"
+      }
+    ]
+  },
+  {
+    "id": "padding",
+    "label": "Padding",
+    "type": "number",
+    "default": 1,
+    "min": 0,
+    "max": 4,
+    "step": 1
+  },
+  {
+    "id": "title",
+    "label": "Frame title",
+    "type": "text",
+    "default": "SumiJS"
+  },
+  {
+    "id": "titlealign",
+    "label": "Title alignment",
+    "type": "select",
+    "default": "center",
+    "options": [
+      {
+        "label": "Left",
+        "value": "left"
+      },
+      {
+        "label": "Center",
+        "value": "center"
+      },
+      {
+        "label": "Right",
+        "value": "right"
+      }
+    ]
+  }
+]

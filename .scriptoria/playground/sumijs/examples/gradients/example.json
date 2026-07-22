@@ -1,0 +1,8 @@
+{
+  "description": "Attach validated gradient style metadata and generate browser-ready HTML.",
+  "mode": "hybrid",
+  "editable": true,
+  "output": {
+    "type": "json"
+  }
+}

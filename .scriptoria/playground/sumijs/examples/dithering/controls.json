@@ -1,0 +1,23 @@
+[
+  {
+    "id": "threshold",
+    "label": "Threshold",
+    "type": "number",
+    "default": 0.45,
+    "min": 0,
+    "max": 1,
+    "step": 0.05
+  },
+  {
+    "id": "dither",
+    "label": "Enable dithering",
+    "type": "checkbox",
+    "default": true
+  },
+  {
+    "id": "invert",
+    "label": "Invert luminance",
+    "type": "checkbox",
+    "default": false
+  }
+]

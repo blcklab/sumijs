@@ -1,0 +1,71 @@
+[
+  {
+    "id": "text",
+    "label": "Text",
+    "type": "text",
+    "default": "COLOR",
+    "required": true
+  },
+  {
+    "id": "font",
+    "label": "Font",
+    "type": "select",
+    "default": "shadow",
+    "options": [
+      {
+        "label": "Block",
+        "value": "block"
+      },
+      {
+        "label": "Slant",
+        "value": "slant"
+      },
+      {
+        "label": "Shadow",
+        "value": "shadow"
+      },
+      {
+        "label": "Mini",
+        "value": "mini"
+      },
+      {
+        "label": "Three D",
+        "value": "three-d"
+      }
+    ]
+  },
+  {
+    "id": "direction",
+    "label": "Direction",
+    "type": "select",
+    "default": "horizontal",
+    "options": [
+      {
+        "label": "Horizontal",
+        "value": "horizontal"
+      },
+      {
+        "label": "Vertical",
+        "value": "vertical"
+      },
+      {
+        "label": "Diagonal",
+        "value": "diagonal"
+      }
+    ]
+  },
+  {
+    "id": "start",
+    "label": "Start color",
+    "type": "text",
+    "default": "#6366f1",
+    "required": true
+  },
+  {
+    "id": "end",
+    "label": "End color",
+    "type": "text",
+    "default": "#ec4899",
+    "required": true
+  }
+]

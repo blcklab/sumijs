@@ -1,0 +1,47 @@
+[
+  {
+    "id": "text",
+    "label": "Lines",
+    "type": "text",
+    "default": "BUILD / SHIP",
+    "required": true,
+    "description": "Separate banner lines with a forward slash."
+  },
+  {
+    "id": "font",
+    "label": "Font",
+    "type": "select",
+    "default": "block",
+    "options": [
+      {
+        "label": "Block",
+        "value": "block"
+      },
+      {
+        "label": "Slant",
+        "value": "slant"
+      },
+      {
+        "label": "Shadow",
+        "value": "shadow"
+      },
+      {
+        "label": "Mini",
+        "value": "mini"
+      },
+      {
+        "label": "Three D",
+        "value": "three-d"
+      }
+    ]
+  },
+  {
+    "id": "line",
+    "label": "Line spacing",
+    "type": "number",
+    "default": 1,
+    "min": 0,
+    "max": 4,
+    "step": 1
+  }
+]

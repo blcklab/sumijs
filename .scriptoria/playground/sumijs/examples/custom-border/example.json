@@ -1,0 +1,8 @@
+{
+  "description": "Define all eight border characters and asymmetric frame spacing.",
+  "mode": "editor",
+  "editable": true,
+  "output": {
+    "type": "json"
+  }
+}

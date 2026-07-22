@@ -1,0 +1,58 @@
+[
+  {
+    "id": "text",
+    "label": "Text",
+    "type": "text",
+    "default": "BUILD FAST",
+    "required": true
+  },
+  {
+    "id": "width",
+    "label": "Output width",
+    "type": "number",
+    "default": 48,
+    "min": 16,
+    "max": 96,
+    "step": 1
+  },
+  {
+    "id": "align",
+    "label": "Alignment",
+    "type": "select",
+    "default": "center",
+    "options": [
+      {
+        "label": "Left",
+        "value": "left"
+      },
+      {
+        "label": "Center",
+        "value": "center"
+      },
+      {
+        "label": "Right",
+        "value": "right"
+      }
+    ]
+  },
+  {
+    "id": "overflow",
+    "label": "Overflow",
+    "type": "select",
+    "default": "wrap",
+    "options": [
+      {
+        "label": "Preserve",
+        "value": "preserve"
+      },
+      {
+        "label": "Clip",
+        "value": "clip"
+      },
+      {
+        "label": "Wrap",
+        "value": "wrap"
+      }
+    ]
+  }
+]

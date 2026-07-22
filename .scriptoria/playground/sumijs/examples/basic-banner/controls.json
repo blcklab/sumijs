@@ -1,0 +1,58 @@
+[
+  {
+    "id": "text",
+    "label": "Text",
+    "type": "text",
+    "default": "SUMI",
+    "required": true,
+    "placeholder": "Enter banner text"
+  },
+  {
+    "id": "font",
+    "label": "Font",
+    "type": "select",
+    "default": "slant",
+    "options": [
+      {
+        "label": "Block",
+        "value": "block"
+      },
+      {
+        "label": "Slant",
+        "value": "slant"
+      },
+      {
+        "label": "Shadow",
+        "value": "shadow"
+      },
+      {
+        "label": "Mini",
+        "value": "mini"
+      },
+      {
+        "label": "Three D",
+        "value": "three-d"
+      }
+    ]
+  },
+  {
+    "id": "layout",
+    "label": "Layout",
+    "type": "select",
+    "default": "fitted",
+    "options": [
+      {
+        "label": "Full",
+        "value": "full"
+      },
+      {
+        "label": "Fitted",
+        "value": "fitted"
+      },
+      {
+        "label": "Smushed",
+        "value": "smushed"
+      }
+    ]
+  }
+]

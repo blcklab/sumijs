@@ -1,0 +1,9 @@
+[
+  {
+    "id": "text",
+    "label": "Text",
+    "type": "text",
+    "default": "CUSTOM",
+    "required": true
+  }
+]

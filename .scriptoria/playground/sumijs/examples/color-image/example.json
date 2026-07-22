@@ -1,0 +1,8 @@
+{
+  "description": "Preserve sampled RGB colors as cell foreground metadata and HTML styles.",
+  "mode": "editor",
+  "editable": true,
+  "output": {
+    "type": "json"
+  }
+}

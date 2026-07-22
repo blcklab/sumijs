@@ -1,0 +1,45 @@
+[
+  {
+    "id": "width",
+    "label": "Output width",
+    "type": "number",
+    "default": 40,
+    "min": 16,
+    "max": 72,
+    "step": 1
+  },
+  {
+    "id": "charset",
+    "label": "Character set",
+    "type": "select",
+    "default": "detailed",
+    "options": [
+      {
+        "label": "Minimal",
+        "value": "minimal"
+      },
+      {
+        "label": "Standard",
+        "value": "standard"
+      },
+      {
+        "label": "Detailed",
+        "value": "detailed"
+      },
+      {
+        "label": "Blocks",
+        "value": "blocks"
+      },
+      {
+        "label": "Binary",
+        "value": "binary"
+      }
+    ]
+  },
+  {
+    "id": "invert",
+    "label": "Invert luminance",
+    "type": "checkbox",
+    "default": false
+  }
+]

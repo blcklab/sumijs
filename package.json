@@ -1,0 +1,253 @@
+{
+  "name": "sumijs",
+  "version": "0.1.0",
+  "description": "A lightweight, tree-shakeable ASCII art toolkit for text, images, terminals, HTML, and SVG.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "sumijs": "./dist/cli/main.js"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      },
+      "default": "./dist/index.js"
+    },
+    "./text": {
+      "import": {
+        "types": "./dist/text.d.ts",
+        "default": "./dist/text.js"
+      },
+      "require": {
+        "types": "./dist/text.d.cts",
+        "default": "./dist/text.cjs"
+      },
+      "default": "./dist/text.js"
+    },
+    "./image": {
+      "import": {
+        "types": "./dist/image.d.ts",
+        "default": "./dist/image.js"
+      },
+      "require": {
+        "types": "./dist/image.d.cts",
+        "default": "./dist/image.cjs"
+      },
+      "default": "./dist/image.js"
+    },
+    "./image/browser": {
+      "import": {
+        "types": "./dist/image/browser.d.ts",
+        "default": "./dist/image/browser.js"
+      },
+      "require": {
+        "types": "./dist/image/browser.d.cts",
+        "default": "./dist/image/browser.cjs"
+      },
+      "default": "./dist/image/browser.js"
+    },
+    "./image/node": {
+      "import": {
+        "types": "./dist/image/node.d.ts",
+        "default": "./dist/image/node.js"
+      },
+      "require": {
+        "types": "./dist/image/node.d.cts",
+        "default": "./dist/image/node.cjs"
+      },
+      "default": "./dist/image/node.js"
+    },
+    "./fonts": {
+      "import": {
+        "types": "./dist/fonts/index.d.ts",
+        "default": "./dist/fonts/index.js"
+      },
+      "require": {
+        "types": "./dist/fonts/index.d.cts",
+        "default": "./dist/fonts/index.cjs"
+      },
+      "default": "./dist/fonts/index.js"
+    },
+    "./fonts/node": {
+      "import": {
+        "types": "./dist/fonts/node.d.ts",
+        "default": "./dist/fonts/node.js"
+      },
+      "require": {
+        "types": "./dist/fonts/node.d.cts",
+        "default": "./dist/fonts/node.cjs"
+      },
+      "default": "./dist/fonts/node.js"
+    },
+    "./fonts/block": {
+      "import": {
+        "types": "./dist/fonts/block.d.ts",
+        "default": "./dist/fonts/block.js"
+      },
+      "require": {
+        "types": "./dist/fonts/block.d.cts",
+        "default": "./dist/fonts/block.cjs"
+      },
+      "default": "./dist/fonts/block.js"
+    },
+    "./fonts/slant": {
+      "import": {
+        "types": "./dist/fonts/slant.d.ts",
+        "default": "./dist/fonts/slant.js"
+      },
+      "require": {
+        "types": "./dist/fonts/slant.d.cts",
+        "default": "./dist/fonts/slant.cjs"
+      },
+      "default": "./dist/fonts/slant.js"
+    },
+    "./fonts/shadow": {
+      "import": {
+        "types": "./dist/fonts/shadow.d.ts",
+        "default": "./dist/fonts/shadow.js"
+      },
+      "require": {
+        "types": "./dist/fonts/shadow.d.cts",
+        "default": "./dist/fonts/shadow.cjs"
+      },
+      "default": "./dist/fonts/shadow.js"
+    },
+    "./fonts/mini": {
+      "import": {
+        "types": "./dist/fonts/mini.d.ts",
+        "default": "./dist/fonts/mini.js"
+      },
+      "require": {
+        "types": "./dist/fonts/mini.d.cts",
+        "default": "./dist/fonts/mini.cjs"
+      },
+      "default": "./dist/fonts/mini.js"
+    },
+    "./fonts/three-d": {
+      "import": {
+        "types": "./dist/fonts/three-d.d.ts",
+        "default": "./dist/fonts/three-d.js"
+      },
+      "require": {
+        "types": "./dist/fonts/three-d.d.cts",
+        "default": "./dist/fonts/three-d.cjs"
+      },
+      "default": "./dist/fonts/three-d.js"
+    },
+    "./formatters": {
+      "import": {
+        "types": "./dist/formatters.d.ts",
+        "default": "./dist/formatters.js"
+      },
+      "require": {
+        "types": "./dist/formatters.d.cts",
+        "default": "./dist/formatters.cjs"
+      },
+      "default": "./dist/formatters.js"
+    },
+    "./types": {
+      "import": {
+        "types": "./dist/types.d.ts",
+        "default": "./dist/types.js"
+      },
+      "require": {
+        "types": "./dist/types.d.cts",
+        "default": "./dist/types.cjs"
+      },
+      "default": "./dist/types.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "ascii",
+    "ascii-art",
+    "figlet",
+    "terminal",
+    "banner",
+    "image-to-ascii",
+    "svg",
+    "ansi",
+    "cli",
+    "browser"
+  ],
+  "author": "Black Lab",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blcklab/sumijs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/blcklab/sumijs/issues"
+  },
+  "homepage": "https://github.com/blcklab/sumijs#readme",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "build": "node scripts/build.mjs",
+    "docs:check": "node scripts/check-docs.mjs",
+    "check:exports": "node scripts/check-exports.mjs",
+    "check:tree-shaking": "node scripts/check-side-effects.mjs",
+    "check:package": "node scripts/check-package.mjs",
+    "check:types": "attw --pack . --profile node16",
+    "size": "node scripts/check-bundle-size.mjs",
+    "benchmark": "npm run build && node scripts/benchmark.mjs",
+    "check": "npm run check:source && npm run check:dist",
+    "prepublishOnly": "npm run check",
+    "check:source": "prettier --check . && eslint . && tsc --noEmit && node scripts/check-docs.mjs",
+    "check:dist": "node scripts/build.mjs && vitest run && node scripts/check-package.mjs && node scripts/check-exports.mjs && node scripts/check-side-effects.mjs && node scripts/check-bundle-size.mjs",
+    "check:consumers": "node scripts/verify-package.mjs"
+  },
+  "peerDependencies": {
+    "sharp": ">=0.33"
+  },
+  "peerDependenciesMeta": {
+    "sharp": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.2",
+    "@eslint/js": "^9.31.0",
+    "@types/node": "^22.15.30",
+    "esbuild": "^0.25.6",
+    "eslint": "^9.31.0",
+    "prettier": "^3.6.2",
+    "publint": "^0.3.12",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.38.0",
+    "vitest": "^3.2.4"
+  },
+  "overrides": {
+    "tsup": {
+      "esbuild": "^0.28.1"
+    }
+  }
+}

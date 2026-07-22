@@ -1,0 +1,8 @@
+{
+  "description": "Generate a valid one-row FIGlet source, parse it, and render with the custom font.",
+  "mode": "hybrid",
+  "editable": true,
+  "output": {
+    "type": "json"
+  }
+}

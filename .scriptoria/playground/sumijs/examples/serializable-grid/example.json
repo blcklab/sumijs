@@ -1,0 +1,8 @@
+{
+  "description": "Inspect the complete stable version-1 JSON representation of an ASCII grid.",
+  "mode": "editor",
+  "editable": true,
+  "output": {
+    "type": "json"
+  }
+}

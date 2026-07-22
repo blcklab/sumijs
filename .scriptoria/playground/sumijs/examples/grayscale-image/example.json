@@ -1,0 +1,8 @@
+{
+  "description": "Render decoded RGBA pixels directly without a browser or Node image decoder.",
+  "mode": "hybrid",
+  "editable": true,
+  "output": {
+    "type": "json"
+  }
+}

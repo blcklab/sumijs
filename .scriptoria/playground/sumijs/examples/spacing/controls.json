@@ -1,0 +1,28 @@
+[
+  {
+    "id": "text",
+    "label": "Lines",
+    "type": "text",
+    "default": "MAKE / SPACE",
+    "required": true,
+    "description": "Separate banner lines with a forward slash."
+  },
+  {
+    "id": "letter",
+    "label": "Letter spacing",
+    "type": "number",
+    "default": 1,
+    "min": 0,
+    "max": 4,
+    "step": 1
+  },
+  {
+    "id": "line",
+    "label": "Line spacing",
+    "type": "number",
+    "default": 1,
+    "min": 0,
+    "max": 4,
+    "step": 1
+  }
+]

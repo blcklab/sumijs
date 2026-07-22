@@ -1,0 +1,7 @@
+{
+  "description": "Compare full, fitted, and collision-aware smushed glyph layout.",
+  "mode": "controls",
+  "output": {
+    "type": "json"
+  }
+}

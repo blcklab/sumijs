@@ -1,0 +1,132 @@
+{
+  "$schema": "https://scriptoria.dev/schemas/v0.15/playground.schema.json",
+  "title": "SumiJS Playground",
+  "description": "Interactive text, image, styling, formatting, and custom-font examples for SumiJS.",
+  "defaultPlugin": "sumijs",
+  "plugins": [
+    {
+      "id": "sumijs",
+      "label": "SumiJS",
+      "description": "Render reusable ASCII-art grids from text and decoded images.",
+      "adapter": "module",
+      "asset": {
+        "provider": "jsdelivr-npm",
+        "package": "sumijs",
+        "version": "0.1.0",
+        "path": "dist/index.js"
+      },
+      "examplesRoot": ".scriptoria/playground/sumijs/examples",
+      "defaultExample": "basic-banner",
+      "examples": [
+        {
+          "id": "basic-banner",
+          "label": "Basic Banner",
+          "group": "Getting Started",
+          "order": 10
+        },
+        {
+          "id": "font-gallery",
+          "label": "Font Gallery",
+          "group": "Getting Started",
+          "order": 20
+        },
+        {
+          "id": "multiline-banner",
+          "label": "Multiline Banner",
+          "group": "Getting Started",
+          "order": 30
+        },
+        {
+          "id": "layout-modes",
+          "label": "Layout Modes",
+          "group": "Text Layout",
+          "order": 40
+        },
+        {
+          "id": "width-alignment",
+          "label": "Width & Alignment",
+          "group": "Text Layout",
+          "order": 50
+        },
+        {
+          "id": "spacing",
+          "label": "Letter & Line Spacing",
+          "group": "Text Layout",
+          "order": 60
+        },
+        {
+          "id": "fallback-characters",
+          "label": "Fallback Characters",
+          "group": "Text Layout",
+          "order": 70
+        },
+        {
+          "id": "gradients",
+          "label": "Gradient Styling",
+          "group": "Styling & Frames",
+          "order": 80
+        },
+        {
+          "id": "frames",
+          "label": "Frame Builder",
+          "group": "Styling & Frames",
+          "order": 90
+        },
+        {
+          "id": "custom-border",
+          "label": "Custom Border",
+          "group": "Styling & Frames",
+          "order": 100
+        },
+        {
+          "id": "output-formats",
+          "label": "Output Formats",
+          "group": "Output & Serialization",
+          "order": 110
+        },
+        {
+          "id": "serializable-grid",
+          "label": "Serializable Grid",
+          "group": "Output & Serialization",
+          "order": 120
+        },
+        {
+          "id": "grayscale-image",
+          "label": "Grayscale Image",
+          "group": "Image Rendering",
+          "order": 130
+        },
+        {
+          "id": "character-sets",
+          "label": "Character Sets",
+          "group": "Image Rendering",
+          "order": 140
+        },
+        {
+          "id": "dithering",
+          "label": "Threshold & Dithering",
+          "group": "Image Rendering",
+          "order": 150
+        },
+        {
+          "id": "color-image",
+          "label": "Color Image Metadata",
+          "group": "Image Rendering",
+          "order": 160
+        },
+        {
+          "id": "custom-font",
+          "label": "Custom FIGlet Font",
+          "group": "Advanced",
+          "order": 170
+        },
+        {
+          "id": "error-handling",
+          "label": "Error Handling",
+          "group": "Advanced",
+          "order": 180
+        }
+      ]
+    }
+  ]
+}

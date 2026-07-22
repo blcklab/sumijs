@@ -1,0 +1,22 @@
+[
+  {
+    "id": "scenario",
+    "label": "Failure scenario",
+    "type": "select",
+    "default": "unknown-font",
+    "options": [
+      {
+        "label": "Unknown font",
+        "value": "unknown-font"
+      },
+      {
+        "label": "Impossible wrapped width",
+        "value": "bad-width"
+      },
+      {
+        "label": "Malformed FIGlet font",
+        "value": "malformed-font"
+      }
+    ]
+  }
+]

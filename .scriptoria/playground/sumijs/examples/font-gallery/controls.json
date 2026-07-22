@@ -1,0 +1,9 @@
+[
+  {
+    "id": "text",
+    "label": "Text",
+    "type": "text",
+    "default": "SUMI",
+    "required": true
+  }
+]

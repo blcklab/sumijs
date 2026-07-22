@@ -1,0 +1,7 @@
+{
+  "description": "Compare minimal, standard, detailed, blocks, and binary character ramps.",
+  "mode": "controls",
+  "output": {
+    "type": "json"
+  }
+}
