@@ -23,9 +23,7 @@ export function run({ module }) {
       ariaLabel: 'INK inside a custom border',
       inlineStyles: true,
     }),
-    plain: result
-      .toPlainText({ preserveTrailingWhitespace: true })
-      .split('\n'),
+    plain: result.toPlainText({ preserveTrailingWhitespace: true }).split('\n'),
     width: result.width,
     height: result.height,
   }

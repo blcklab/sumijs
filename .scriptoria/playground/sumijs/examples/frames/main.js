@@ -16,9 +16,7 @@ export function run({ module, inputs }) {
       ariaLabel: `${text} inside a ${inputs.frame} frame`,
       inlineStyles: true,
     }),
-    plain: result
-      .toPlainText({ preserveTrailingWhitespace: true })
-      .split('\n'),
+    plain: result.toPlainText({ preserveTrailingWhitespace: true }).split('\n'),
     width: result.width,
     height: result.height,
     frame: inputs.frame,
