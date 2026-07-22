@@ -11,9 +11,11 @@ export function run({ module, inputs }) {
   })
 
   return {
-    preview: result.toPlainText({
-      preserveTrailingWhitespace: true,
-    }).split('\n'),
+    preview: result
+      .toPlainText({
+        preserveTrailingWhitespace: true,
+      })
+      .split('\n'),
     width: result.width,
     height: result.height,
   }
