@@ -1,6 +1,6 @@
 {
   "name": "@blcklab/sumijs",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A lightweight, ASCII art toolkit for text, images, terminals, HTML, and SVG.",
   "type": "module",
   "main": "./dist/index.cjs",
