@@ -12,7 +12,7 @@
       "asset": {
         "provider": "jsdelivr-npm",
         "package": "@blcklab/sumijs",
-        "version": "0.1.0",
+        "version": "0.1.10",
         "path": "dist/index.js"
       },
       "examplesRoot": ".scriptoria/playground/sumijs/examples",
