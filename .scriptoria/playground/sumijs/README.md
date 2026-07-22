@@ -1,6 +1,6 @@
 # SumiJS Playground
 
-This folder contains Scriptoria `0.15` module Playground examples for the published `sumijs@0.1.0` browser ESM entry.
+This folder contains Scriptoria `0.15` module Playground examples for the published `@blcklab/sumijs@0.1.0` browser ESM entry.
 
 The examples cover:
 

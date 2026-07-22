@@ -7,7 +7,7 @@
 Use the root entry when selecting built-in fonts by name:
 
 ```ts
-import { renderText } from 'sumijs'
+import { renderText } from '@blcklab/sumijs'
 
 const result = renderText('HELLO', { font: 'shadow' })
 ```
@@ -15,8 +15,8 @@ const result = renderText('HELLO', { font: 'shadow' })
 Use explicit imports when bundle size is the priority:
 
 ```ts
-import { renderText } from 'sumijs/text'
-import { shadow } from 'sumijs/fonts/shadow'
+import { renderText } from '@blcklab/sumijs/text'
+import { shadow } from '@blcklab/sumijs/fonts/shadow'
 
 const result = renderText('HELLO', { font: shadow })
 ```

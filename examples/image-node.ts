@@ -1,5 +1,5 @@
-import { renderImage } from 'sumijs/image'
-import { createNodeImageDecoder } from 'sumijs/image/node'
+import { renderImage } from '@blcklab/sumijs/image'
+import { createNodeImageDecoder } from '@blcklab/sumijs/image/node'
 
 const result = await renderImage('./logo.png', {
   decoder: createNodeImageDecoder(),

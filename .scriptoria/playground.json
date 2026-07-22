@@ -11,7 +11,7 @@
       "adapter": "module",
       "asset": {
         "provider": "jsdelivr-npm",
-        "package": "sumijs",
+        "package": "@blcklab/sumijs",
         "version": "0.1.0",
         "path": "dist/index.js"
       },

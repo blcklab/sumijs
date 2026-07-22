@@ -6,6 +6,7 @@ All notable changes to SumiJS are documented here.
 
 ### Added
 
+- Published as the public scoped npm package `@blcklab/sumijs`.
 - FIGlet-inspired text renderer with five built-in fonts.
 - Full, fitted, and collision-aware smushed layout modes.
 - Immutable shared ASCII grid and render-result API.

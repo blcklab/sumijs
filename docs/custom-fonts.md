@@ -5,8 +5,8 @@ SumiJS can parse FIGlet-compatible `.flf` content at runtime. Keep font loading 
 ## Parse a string
 
 ```ts
-import { parseFont } from 'sumijs/fonts'
-import { renderText } from 'sumijs/text'
+import { parseFont } from '@blcklab/sumijs/fonts'
+import { renderText } from '@blcklab/sumijs/text'
 
 const font = parseFont(fontSource, 'brand')
 const result = renderText('BRAND', { font })
@@ -17,7 +17,7 @@ The parser reads the standard ASCII glyph range from code point 32 through 126. 
 ## Load in a browser
 
 ```ts
-import { loadFontFromURL } from 'sumijs/fonts'
+import { loadFontFromURL } from '@blcklab/sumijs/fonts'
 
 const font = await loadFontFromURL('/fonts/brand.flf', {
   name: 'brand',
@@ -38,12 +38,12 @@ The URL is requested only when `loadFontFromURL()` is called. Browser CORS rules
 ## Load from Node.js
 
 ```ts
-import { loadFontFromFile } from 'sumijs/fonts/node'
+import { loadFontFromFile } from '@blcklab/sumijs/fonts/node'
 
 const font = await loadFontFromFile('./assets/brand.flf', 'brand')
 ```
 
-The Node loader is isolated in `sumijs/fonts/node`, so browser bundles do not include filesystem imports.
+The Node loader is isolated in `@blcklab/sumijs/fonts/node`, so browser bundles do not include filesystem imports.
 
 ## Cache parsed fonts
 

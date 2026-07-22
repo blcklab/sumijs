@@ -5,8 +5,8 @@ SumiJS separates browser-safe rendering from environment-specific image decoding
 ## Small text bundle
 
 ```ts
-import { renderText } from 'sumijs/text'
-import { block } from 'sumijs/fonts/block'
+import { renderText } from '@blcklab/sumijs/text'
+import { block } from '@blcklab/sumijs/fonts/block'
 
 const result = renderText('CREATE', {
   font: block,
@@ -24,8 +24,8 @@ document.querySelector('#logo')!.innerHTML = result.toHTML({
 ## Browser image decoder
 
 ```ts
-import { renderImage } from 'sumijs/image'
-import { createBrowserImageDecoder } from 'sumijs/image/browser'
+import { renderImage } from '@blcklab/sumijs/image'
+import { createBrowserImageDecoder } from '@blcklab/sumijs/image/browser'
 
 const decoder = createBrowserImageDecoder()
 const result = await renderImage('/images/logo.png', {

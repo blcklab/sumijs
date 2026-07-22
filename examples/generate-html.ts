@@ -1,5 +1,5 @@
 import { writeFile } from 'node:fs/promises'
-import { renderText } from 'sumijs'
+import { renderText } from '@blcklab/sumijs'
 
 const result = renderText('SUMI', {
   font: 'shadow',

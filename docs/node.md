@@ -6,7 +6,7 @@ SumiJS supports Node.js 20 or newer and provides isolated adapters for filesyste
 
 ```ts
 import { writeFile } from 'node:fs/promises'
-import { renderText } from 'sumijs'
+import { renderText } from '@blcklab/sumijs'
 
 const svg = renderText('RELEASE', {
   font: 'shadow',
@@ -19,8 +19,8 @@ await writeFile('release.svg', svg)
 ## Encoded image decoding
 
 ```ts
-import { renderImage } from 'sumijs/image'
-import { createNodeImageDecoder } from 'sumijs/image/node'
+import { renderImage } from '@blcklab/sumijs/image'
+import { createNodeImageDecoder } from '@blcklab/sumijs/image/node'
 
 const decoder = createNodeImageDecoder()
 const result = await renderImage('./avatar.webp', {
@@ -41,8 +41,8 @@ The decoder accepts local paths, HTTP and HTTPS URLs, `Buffer`, `Uint8Array`, `A
 ## Custom font files
 
 ```ts
-import { loadFontFromFile } from 'sumijs/fonts/node'
-import { renderText } from 'sumijs/text'
+import { loadFontFromFile } from '@blcklab/sumijs/fonts/node'
+import { renderText } from '@blcklab/sumijs/text'
 
 const font = await loadFontFromFile('./assets/brand.flf')
 const output = renderText('BRAND', { font }).toPlainText()
@@ -57,10 +57,10 @@ Retain output limits for user-supplied images. Apply application-level request s
 Every library entry has a CommonJS target:
 
 ```js
-const { renderText } = require('sumijs')
-const { block } = require('sumijs/fonts/block')
+const { renderText } = require('@blcklab/sumijs')
+const { block } = require('@blcklab/sumijs/fonts/block')
 
 console.log(renderText('CJS', { font: block }).toPlainText())
 ```
 
-The CLI remains an ESM executable and can be launched normally through `npx sumijs` or a package script.
+The CLI remains an ESM executable and can be launched normally through `npx @blcklab/sumijs` or a package script.

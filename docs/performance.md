@@ -7,8 +7,8 @@ SumiJS is designed around explicit entry points, immutable results, and one-time
 For a single browser font:
 
 ```ts
-import { renderText } from 'sumijs/text'
-import { block } from 'sumijs/fonts/block'
+import { renderText } from '@blcklab/sumijs/text'
+import { block } from '@blcklab/sumijs/fonts/block'
 ```
 
 The root entry includes all built-in fonts for convenience. Use it for CLI-like experiences and font selectors, not when one font is known at build time.

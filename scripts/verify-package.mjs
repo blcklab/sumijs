@@ -61,7 +61,7 @@ for (const file of info.files) {
 }
 
 const temp = await mkdtemp(join(tmpdir(), 'sumijs-pack-'))
-const packageRoot = join(temp, 'node_modules', 'sumijs')
+const packageRoot = join(temp, 'node_modules', '@blcklab', 'sumijs')
 await mkdir(packageRoot, { recursive: true })
 const extract = spawnSync('tar', ['-xzf', archive, '--strip-components=1', '-C', packageRoot], {
   encoding: 'utf8',
@@ -73,10 +73,10 @@ const esmProbe = join(temp, 'esm-probe.mjs')
 await writeFile(
   esmProbe,
   [
-    "import { renderText } from 'sumijs'",
-    "import { renderText as renderTextCore } from 'sumijs/text'",
-    "import { block } from 'sumijs/fonts/block'",
-    "import { createBrowserImageDecoder } from 'sumijs/image/browser'",
+    "import { renderText } from '@blcklab/sumijs'",
+    "import { renderText as renderTextCore } from '@blcklab/sumijs/text'",
+    "import { block } from '@blcklab/sumijs/fonts/block'",
+    "import { createBrowserImageDecoder } from '@blcklab/sumijs/image/browser'",
     "if (typeof renderText !== 'function' || typeof renderTextCore !== 'function') process.exit(1)",
     "if (block.name !== 'block' || typeof createBrowserImageDecoder !== 'function') process.exit(1)",
   ].join('\n'),
@@ -89,10 +89,10 @@ const cjsProbe = join(temp, 'cjs-probe.cjs')
 await writeFile(
   cjsProbe,
   [
-    "const root = require('sumijs')",
-    "const text = require('sumijs/text')",
-    "const block = require('sumijs/fonts/block')",
-    "const nodeImage = require('sumijs/image/node')",
+    "const root = require('@blcklab/sumijs')",
+    "const text = require('@blcklab/sumijs/text')",
+    "const block = require('@blcklab/sumijs/fonts/block')",
+    "const nodeImage = require('@blcklab/sumijs/image/node')",
     "if (typeof root.renderText !== 'function' || typeof text.renderText !== 'function') process.exit(1)",
     "if (block.block.name !== 'block' || typeof nodeImage.createNodeImageDecoder !== 'function') process.exit(1)",
   ].join('\n'),
@@ -115,7 +115,7 @@ assert.equal(cli.stdout.trim(), info.version)
 await build({
   stdin: {
     contents:
-      "import { renderText } from 'sumijs/text'; import { block } from 'sumijs/fonts/block'; console.log(renderText('WEB', { font: block }).width)",
+      "import { renderText } from '@blcklab/sumijs/text'; import { block } from '@blcklab/sumijs/fonts/block'; console.log(renderText('WEB', { font: block }).width)",
     resolveDir: temp,
   },
   absWorkingDir: temp,
@@ -130,8 +130,8 @@ await build({
 await writeFile(
   join(temp, 'consumer.mts'),
   [
-    "import { renderText } from 'sumijs'",
-    "import { block } from 'sumijs/fonts/block'",
+    "import { renderText } from '@blcklab/sumijs'",
+    "import { block } from '@blcklab/sumijs/fonts/block'",
     "const output: string = renderText('TYPE', { font: block }).toPlainText()",
     'void output',
   ].join('\n'),
@@ -140,8 +140,8 @@ await writeFile(
 await writeFile(
   join(temp, 'consumer.cts'),
   [
-    "import { renderText } from 'sumijs'",
-    "import { block } from 'sumijs/fonts/block'",
+    "import { renderText } from '@blcklab/sumijs'",
+    "import { block } from '@blcklab/sumijs/fonts/block'",
     "const output: string = renderText('TYPE', { font: block }).toPlainText()",
     'void output',
   ].join('\n'),

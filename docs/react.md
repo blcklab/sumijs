@@ -6,8 +6,8 @@ Memoize ASCII generation from the values that actually affect the output.
 
 ```tsx
 import { useMemo } from 'react'
-import { renderText } from 'sumijs/text'
-import { block } from 'sumijs/fonts/block'
+import { renderText } from '@blcklab/sumijs/text'
+import { block } from '@blcklab/sumijs/fonts/block'
 
 export function AsciiHeading({ text }: { text: string }) {
   const html = useMemo(

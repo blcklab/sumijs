@@ -3,7 +3,7 @@
 Operational failures use `SumiError`.
 
 ```ts
-import { SumiError } from 'sumijs'
+import { SumiError } from '@blcklab/sumijs'
 
 try {
   renderText('SUMI', options)

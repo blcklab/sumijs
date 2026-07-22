@@ -5,7 +5,7 @@ The `sumijs` executable renders text or images and writes plain text, ANSI, HTML
 ## Run without a global install
 
 ```bash
-npx sumijs "HELLO"
+npx @blcklab/sumijs "HELLO"
 ```
 
 Or install it in a project and use it through an npm script.

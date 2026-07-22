@@ -1,4 +1,4 @@
-import { renderText } from 'sumijs'
+import { renderText } from '@blcklab/sumijs'
 
 console.log(
   renderText('SUMI', {

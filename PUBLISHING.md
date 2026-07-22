@@ -2,6 +2,8 @@
 
 This file is for repository maintainers. Product usage belongs in `/docs`.
 
+The public npm package is `@blcklab/sumijs`; the CLI executable remains `sumijs`.
+
 ## Release requirements
 
 - Use Node.js 20 or 22.

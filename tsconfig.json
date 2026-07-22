@@ -18,8 +18,8 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "sumijs": ["src/index.ts"],
-      "sumijs/*": ["src/*"]
+      "@blcklab/sumijs": ["src/index.ts"],
+      "@blcklab/sumijs/*": ["src/*"]
     }
   },
   "include": ["src", "test", "examples", "vitest.config.ts"]

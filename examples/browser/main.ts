@@ -1,4 +1,4 @@
-import { renderText } from 'sumijs/text'
+import { renderText } from '@blcklab/sumijs/text'
 
 const result = renderText('SUMI', {
   font: 'block',

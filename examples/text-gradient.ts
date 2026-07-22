@@ -1,5 +1,5 @@
-import { renderText } from 'sumijs/text'
-import { block } from 'sumijs/fonts/block'
+import { renderText } from '@blcklab/sumijs/text'
+import { block } from '@blcklab/sumijs/fonts/block'
 
 const result = renderText('CREATE', {
   font: block,

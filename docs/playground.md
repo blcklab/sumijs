@@ -1,6 +1,6 @@
 # Interactive Playground
 
-The SumiJS Playground runs the published browser ESM build inside Scriptoria's sandboxed module adapter. It uses `sumijs@0.1.0` from jsDelivr and does not require Node.js, Sharp, a backend, or an image-decoding dependency.
+The SumiJS Playground runs the published browser ESM build inside Scriptoria's sandboxed module adapter. It uses `@blcklab/sumijs@0.1.0` from jsDelivr and does not require Node.js, Sharp, a backend, or an image-decoding dependency.
 
 Open the dedicated Playground from the repository's **Playground** navigation item. Saved examples are grouped into Getting Started, Text Layout, Styling & Frames, Output & Serialization, Image Rendering, and Advanced topics.
 

@@ -7,13 +7,13 @@ Encoded image input needs an environment adapter.
 Browser:
 
 ```ts
-import { createBrowserImageDecoder } from 'sumijs/image/browser'
+import { createBrowserImageDecoder } from '@blcklab/sumijs/image/browser'
 ```
 
 Node:
 
 ```ts
-import { createNodeImageDecoder } from 'sumijs/image/node'
+import { createNodeImageDecoder } from '@blcklab/sumijs/image/node'
 ```
 
 Install `sharp` for the Node adapter.

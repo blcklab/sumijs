@@ -7,8 +7,8 @@ Render ASCII content from computed state and avoid regenerating it when unrelate
 ```vue
 <script setup lang="ts">
 import { computed } from 'vue'
-import { renderText } from 'sumijs/text'
-import { block } from 'sumijs/fonts/block'
+import { renderText } from '@blcklab/sumijs/text'
+import { block } from '@blcklab/sumijs/fonts/block'
 
 const props = defineProps<{
   text: string
@@ -44,8 +44,8 @@ Decode images in `onMounted()` because Canvas APIs are required during decoding.
 
 ```ts
 import { onMounted, ref } from 'vue'
-import { renderImage } from 'sumijs/image'
-import { createBrowserImageDecoder } from 'sumijs/image/browser'
+import { renderImage } from '@blcklab/sumijs/image'
+import { createBrowserImageDecoder } from '@blcklab/sumijs/image/browser'
 
 const html = ref('')
 

@@ -7,7 +7,7 @@
 No optional dependency is required when the input is already RGBA pixel data.
 
 ```ts
-import { renderImage } from 'sumijs/image'
+import { renderImage } from '@blcklab/sumijs/image'
 
 const result = await renderImage(
   {
@@ -28,8 +28,8 @@ const result = await renderImage(
 Use the browser adapter for browser URLs, blobs, and byte data:
 
 ```ts
-import { renderImage } from 'sumijs/image'
-import { createBrowserImageDecoder } from 'sumijs/image/browser'
+import { renderImage } from '@blcklab/sumijs/image'
+import { createBrowserImageDecoder } from '@blcklab/sumijs/image/browser'
 
 const result = await renderImage('/logo.png', {
   decoder: createBrowserImageDecoder(),
@@ -40,8 +40,8 @@ const result = await renderImage('/logo.png', {
 Use the Node adapter for file paths, URLs, buffers, and byte data:
 
 ```ts
-import { renderImage } from 'sumijs/image'
-import { createNodeImageDecoder } from 'sumijs/image/node'
+import { renderImage } from '@blcklab/sumijs/image'
+import { createNodeImageDecoder } from '@blcklab/sumijs/image/node'
 
 const result = await renderImage('./logo.png', {
   decoder: createNodeImageDecoder(),

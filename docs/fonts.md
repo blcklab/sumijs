@@ -2,19 +2,19 @@
 
 SumiJS ships five built-in fonts as independent modules.
 
-| Font name | Export   | Entry point            | Typical use                |
-| --------- | -------- | ---------------------- | -------------------------- |
-| `block`   | `block`  | `sumijs/fonts/block`   | General headings and logos |
-| `slant`   | `slant`  | `sumijs/fonts/slant`   | Dynamic headings           |
-| `shadow`  | `shadow` | `sumijs/fonts/shadow`  | Dimensional titles         |
-| `mini`    | `mini`   | `sumijs/fonts/mini`    | Compact labels             |
-| `three-d` | `threeD` | `sumijs/fonts/three-d` | Decorative banners         |
+| Font name | Export   | Entry point                     | Typical use                |
+| --------- | -------- | ------------------------------- | -------------------------- |
+| `block`   | `block`  | `@blcklab/sumijs/fonts/block`   | General headings and logos |
+| `slant`   | `slant`  | `@blcklab/sumijs/fonts/slant`   | Dynamic headings           |
+| `shadow`  | `shadow` | `@blcklab/sumijs/fonts/shadow`  | Dimensional titles         |
+| `mini`    | `mini`   | `@blcklab/sumijs/fonts/mini`    | Compact labels             |
+| `three-d` | `threeD` | `@blcklab/sumijs/fonts/three-d` | Decorative banners         |
 
 ## Import one font
 
 ```ts
-import { renderText } from 'sumijs/text'
-import { mini } from 'sumijs/fonts/mini'
+import { renderText } from '@blcklab/sumijs/text'
+import { mini } from '@blcklab/sumijs/fonts/mini'
 
 const result = renderText('DOCS', { font: mini })
 ```
@@ -33,7 +33,7 @@ import {
   shadow,
   slant,
   threeD,
-} from 'sumijs/fonts'
+} from '@blcklab/sumijs/fonts'
 ```
 
 The aggregate entry is useful for font pickers, interactive playgrounds, and CLI-like interfaces.

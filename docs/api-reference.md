@@ -2,7 +2,7 @@
 
 ## `renderText(input, options?)`
 
-Available from `sumijs` and `sumijs/text`.
+Available from `@blcklab/sumijs` and `@blcklab/sumijs/text`.
 
 ```ts
 function renderText(input: string, options?: RenderTextOptions): RenderResult
@@ -30,7 +30,7 @@ The root entry accepts built-in font names or a `SumiFont`. The specialized text
 
 ## `renderImage(input, options?)`
 
-Available from `sumijs` and `sumijs/image`.
+Available from `@blcklab/sumijs` and `@blcklab/sumijs/image`.
 
 ```ts
 function renderImage(input: ImageInput, options?: RenderImageOptions): Promise<RenderResult>
@@ -105,7 +105,7 @@ interface RenderResult {
 
 ## Standalone formatters
 
-Available from `sumijs/formatters`:
+Available from `@blcklab/sumijs/formatters`:
 
 ```ts
 formatPlain(grid, options?)
@@ -147,4 +147,4 @@ interface FrameOptions {
 
 ## Public types
 
-All public types can be imported from `sumijs/types` with `import type`. The root and specialized entries also re-export types relevant to their APIs.
+All public types can be imported from `@blcklab/sumijs/types` with `import type`. The root and specialized entries also re-export types relevant to their APIs.
