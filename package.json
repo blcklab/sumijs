@@ -1,5 +1,5 @@
 {
-  "name": "sumijs",
+  "name": "blcklab@sumijs",
   "version": "0.1.4",
   "description": "A lightweight, tree-shakeable ASCII art toolkit for text, images, terminals, HTML, and SVG.",
   "type": "module",
