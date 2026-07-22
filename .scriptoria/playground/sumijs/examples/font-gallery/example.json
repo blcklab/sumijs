@@ -1,7 +1,8 @@
 {
-  "description": "Compare all five built-in fonts using the same source text.",
+  "description": "Compare all five built-in fonts in one visual gallery.",
   "mode": "controls",
   "output": {
-    "type": "json"
+    "mode": "html",
+    "field": "html"
   }
 }

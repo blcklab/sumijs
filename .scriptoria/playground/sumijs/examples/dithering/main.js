@@ -21,8 +21,8 @@ export async function run({ module, inputs }) {
   const result = await module.renderImage(
     { width, height, data },
     {
-      width: 48,
-      height: 20,
+      width,
+      height,
       preserveAspectRatio: false,
       characters: ' #',
       threshold: Number(inputs.threshold),
@@ -32,9 +32,15 @@ export async function run({ module, inputs }) {
   )
 
   return {
-    preview: result.toPlainText().split('\n'),
+    html: result.toHTML({
+      ariaLabel: 'A radial field rendered with binary ASCII dithering',
+      inlineStyles: true,
+    }),
+    plain: result.toPlainText().split('\n'),
     threshold: Number(inputs.threshold),
     dither: Boolean(inputs.dither),
     invert: Boolean(inputs.invert),
+    width: result.width,
+    height: result.height,
   }
 }

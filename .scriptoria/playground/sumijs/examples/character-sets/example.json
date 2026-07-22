@@ -1,7 +1,8 @@
 {
-  "description": "Compare minimal, standard, detailed, blocks, and binary character ramps.",
+  "description": "Compare minimal, standard, detailed, blocks, and binary character ramps visually.",
   "mode": "controls",
   "output": {
-    "type": "json"
+    "mode": "html",
+    "field": "html"
   }
 }

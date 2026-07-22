@@ -3,6 +3,28 @@
   "mode": "hybrid",
   "editable": true,
   "output": {
-    "type": "json"
+    "mode": "cards",
+    "fields": [
+      {
+        "id": "caught",
+        "label": "Caught"
+      },
+      {
+        "id": "name",
+        "label": "Error name"
+      },
+      {
+        "id": "code",
+        "label": "Stable code"
+      },
+      {
+        "id": "message",
+        "label": "Message"
+      },
+      {
+        "id": "details",
+        "label": "Details"
+      }
+    ]
   }
 }

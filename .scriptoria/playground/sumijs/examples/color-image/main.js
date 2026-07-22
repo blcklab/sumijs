@@ -36,11 +36,13 @@ export async function run({ module }) {
   )
 
   return {
-    preview: result.toPlainText().split('\n'),
-    foregroundColors: result.grid.rows[0].map((cell) => cell.foreground),
     html: result.toHTML({
       ariaLabel: 'Eight colored ASCII bars',
       inlineStyles: true,
     }),
+    plain: result.toPlainText().split('\n'),
+    foregroundColors: result.grid.rows[0].map((cell) => cell.foreground),
+    width: result.width,
+    height: result.height,
   }
 }

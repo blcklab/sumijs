@@ -1,12 +1,18 @@
 export function run({ module, inputs }) {
-  const result = module.renderText(String(inputs.text), {
+  const source = String(inputs.text)
+  const fallback = String(inputs.fallback)
+  const result = module.renderText(source, {
     font: 'block',
-    fallbackCharacter: String(inputs.fallback),
+    fallbackCharacter: fallback,
   })
 
   return {
-    source: String(inputs.text),
-    fallback: String(inputs.fallback),
-    preview: result.toPlainText().split('\n'),
+    html: result.toHTML({
+      ariaLabel: `${source} rendered with fallback ${fallback}`,
+      inlineStyles: true,
+    }),
+    source,
+    fallback,
+    plain: result.toPlainText().split('\n'),
   }
 }

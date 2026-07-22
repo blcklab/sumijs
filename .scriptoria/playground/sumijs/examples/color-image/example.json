@@ -1,8 +1,9 @@
 {
-  "description": "Preserve sampled RGB colors as cell foreground metadata and HTML styles.",
+  "description": "Preserve sampled RGB colors and render the result as real colored ASCII.",
   "mode": "editor",
   "editable": true,
   "output": {
-    "type": "json"
+    "mode": "html",
+    "field": "html"
   }
 }

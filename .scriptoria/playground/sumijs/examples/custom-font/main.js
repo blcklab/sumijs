@@ -9,17 +9,22 @@ export function run({ module, inputs }) {
 
   const source = ['flf2a$ 1 1 1 0 0', ...glyphs].join('\n')
   const font = module.parseFont(source, 'bracket')
-  const result = module.renderText(String(inputs.text), {
+  const text = String(inputs.text)
+  const result = module.renderText(text, {
     font,
     layout: 'full',
   })
 
   return {
+    html: result.toHTML({
+      ariaLabel: `${text} rendered with a generated bracket font`,
+      inlineStyles: true,
+    }),
     font: {
       name: font.name,
       height: font.height,
       glyphs: Object.keys(font.glyphs).length,
     },
-    preview: result.toPlainText().split('\n'),
+    plain: result.toPlainText().split('\n'),
   }
 }

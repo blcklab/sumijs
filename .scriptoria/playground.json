@@ -1,18 +1,18 @@
 {
   "$schema": "https://scriptoria.dev/schemas/v0.15/playground.schema.json",
   "title": "SumiJS Playground",
-  "description": "Interactive text, image, styling, formatting, and custom-font examples for SumiJS.",
+  "description": "Interactive visual previews and structured examples for SumiJS text, image, styling, formatting, and custom-font APIs.",
   "defaultPlugin": "sumijs",
   "plugins": [
     {
       "id": "sumijs",
       "label": "SumiJS",
-      "description": "Render reusable ASCII-art grids from text and decoded images.",
+      "description": "Render text and decoded images into reusable ASCII grids with secure HTML previews and structured data.",
       "adapter": "module",
       "asset": {
         "provider": "jsdelivr-npm",
         "package": "@blcklab/sumijs",
-        "version": "0.1.11",
+        "version": "0.1.9",
         "path": "dist/index.js"
       },
       "examplesRoot": ".scriptoria/playground/sumijs/examples",
@@ -61,70 +61,76 @@
           "order": 70
         },
         {
+          "id": "style-lab",
+          "label": "Style Lab",
+          "group": "Styling & Frames",
+          "order": 80
+        },
+        {
           "id": "gradients",
           "label": "Gradient Styling",
           "group": "Styling & Frames",
-          "order": 80
+          "order": 90
         },
         {
           "id": "frames",
           "label": "Frame Builder",
           "group": "Styling & Frames",
-          "order": 90
+          "order": 100
         },
         {
           "id": "custom-border",
           "label": "Custom Border",
           "group": "Styling & Frames",
-          "order": 100
+          "order": 110
         },
         {
           "id": "output-formats",
           "label": "Output Formats",
           "group": "Output & Serialization",
-          "order": 110
+          "order": 120
         },
         {
           "id": "serializable-grid",
           "label": "Serializable Grid",
           "group": "Output & Serialization",
-          "order": 120
+          "order": 130
         },
         {
           "id": "grayscale-image",
           "label": "Grayscale Image",
           "group": "Image Rendering",
-          "order": 130
+          "order": 140
         },
         {
           "id": "character-sets",
           "label": "Character Sets",
           "group": "Image Rendering",
-          "order": 140
+          "order": 150
         },
         {
           "id": "dithering",
           "label": "Threshold & Dithering",
           "group": "Image Rendering",
-          "order": 150
+          "order": 160
         },
         {
           "id": "color-image",
-          "label": "Color Image Metadata",
+          "label": "Color Image Preview",
           "group": "Image Rendering",
-          "order": 160
+          "order": 170
         },
         {
           "id": "custom-font",
           "label": "Custom FIGlet Font",
           "group": "Advanced",
-          "order": 170
+          "order": 180
         },
         {
           "id": "error-handling",
           "label": "Error Handling",
           "group": "Advanced",
-          "order": 180
+          "order": 190
         }
       ]
     }

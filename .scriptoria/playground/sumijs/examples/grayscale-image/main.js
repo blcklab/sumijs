@@ -26,9 +26,14 @@ export async function run({ module, inputs }) {
   )
 
   return {
-    preview: result.toPlainText().split('\n'),
+    html: result.toHTML({
+      ariaLabel: 'A grayscale gradient rendered as ASCII art',
+      inlineStyles: true,
+    }),
+    plain: result.toPlainText().split('\n'),
     width: result.width,
     height: result.height,
     charset: inputs.charset,
+    invert: Boolean(inputs.invert),
   }
 }

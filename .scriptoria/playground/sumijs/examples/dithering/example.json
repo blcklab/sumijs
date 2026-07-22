@@ -1,8 +1,9 @@
 {
-  "description": "Turn a radial grayscale field into binary ASCII with optional dithering.",
+  "description": "Turn a radial grayscale field into binary ASCII with adjustable threshold and dithering.",
   "mode": "hybrid",
   "editable": true,
   "output": {
-    "type": "json"
+    "mode": "html",
+    "field": "html"
   }
 }

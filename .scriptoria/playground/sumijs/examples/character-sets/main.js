@@ -15,10 +15,9 @@ export async function run({ module }) {
   }
 
   const input = { width, height, data }
-  const names = Object.keys(module.CHARACTER_SETS)
   const previews = []
 
-  for (const charset of names) {
+  for (const charset of Object.keys(module.CHARACTER_SETS)) {
     const result = await module.renderImage(input, {
       width: 32,
       height: 6,
@@ -30,8 +29,20 @@ export async function run({ module }) {
       charset,
       ramp: module.CHARACTER_SETS[charset],
       preview: result.toPlainText().split('\n'),
+      html: result.toHTML({
+        ariaLabel: `${charset} character set`,
+        inlineStyles: true,
+      }),
     })
   }
 
-  return { previews }
+  return {
+    html: previews
+      .map(
+        (item) =>
+          `<div><p><strong>${item.charset}</strong> <small>${item.ramp}</small></p>${item.html}<br></div>`,
+      )
+      .join(''),
+    previews: previews.map(({ html: _html, ...preview }) => preview),
+  }
 }

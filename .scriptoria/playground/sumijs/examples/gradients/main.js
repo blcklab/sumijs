@@ -1,5 +1,6 @@
 export function run({ module, inputs }) {
-  const result = module.renderText(String(inputs.text), {
+  const text = String(inputs.text)
+  const result = module.renderText(text, {
     font: inputs.font,
     style: {
       gradient: [String(inputs.start), String(inputs.end)],
@@ -8,19 +9,21 @@ export function run({ module, inputs }) {
     },
   })
 
-  const colors = result.grid.rows
+  const sampledForegroundColors = result.grid.rows
     .flat()
     .filter((cell) => cell.character !== ' ' && cell.foreground)
     .slice(0, 12)
     .map((cell) => cell.foreground)
 
   return {
-    preview: result.toPlainText().split('\n'),
-    direction: inputs.direction,
-    sampledForegroundColors: colors,
     html: result.toHTML({
-      ariaLabel: String(inputs.text),
+      ariaLabel: text,
       inlineStyles: true,
     }),
+    plain: result.toPlainText().split('\n'),
+    direction: inputs.direction,
+    sampledForegroundColors,
+    width: result.width,
+    height: result.height,
   }
 }

@@ -3,6 +3,7 @@
   "mode": "editor",
   "editable": true,
   "output": {
-    "type": "json"
+    "mode": "html",
+    "field": "html"
   }
 }

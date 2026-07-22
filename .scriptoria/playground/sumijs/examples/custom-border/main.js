@@ -19,10 +19,12 @@ export function run({ module }) {
   })
 
   return {
-    preview: result
-      .toPlainText({
-        preserveTrailingWhitespace: true,
-      })
+    html: result.toHTML({
+      ariaLabel: 'INK inside a custom border',
+      inlineStyles: true,
+    }),
+    plain: result
+      .toPlainText({ preserveTrailingWhitespace: true })
       .split('\n'),
     width: result.width,
     height: result.height,

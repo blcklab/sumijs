@@ -1,7 +1,8 @@
 {
-  "description": "Compare full, fitted, and collision-aware smushed glyph layout.",
+  "description": "Compare full, fitted, and collision-aware smushed glyph composition visually.",
   "mode": "controls",
   "output": {
-    "type": "json"
+    "mode": "html",
+    "field": "html"
   }
 }

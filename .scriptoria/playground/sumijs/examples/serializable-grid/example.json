@@ -3,6 +3,6 @@
   "mode": "editor",
   "editable": true,
   "output": {
-    "type": "json"
+    "mode": "json"
   }
 }

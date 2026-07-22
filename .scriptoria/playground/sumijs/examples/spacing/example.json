@@ -2,6 +2,7 @@
   "description": "Control spacing between glyphs and between multiline banner rows.",
   "mode": "controls",
   "output": {
-    "type": "json"
+    "mode": "html",
+    "field": "html"
   }
 }

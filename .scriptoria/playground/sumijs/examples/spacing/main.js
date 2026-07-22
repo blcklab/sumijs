@@ -7,7 +7,11 @@ export function run({ module, inputs }) {
   })
 
   return {
-    preview: result.toPlainText().split('\n'),
+    html: result.toHTML({
+      ariaLabel: text.replace(/\n/gu, ', '),
+      inlineStyles: true,
+    }),
+    plain: result.toPlainText().split('\n'),
     width: result.width,
     height: result.height,
     letterSpacing: Number(inputs.letter),

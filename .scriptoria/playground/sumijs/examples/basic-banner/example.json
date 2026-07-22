@@ -1,8 +1,9 @@
 {
-  "description": "Render a banner with an adjustable built-in font and horizontal layout.",
+  "description": "Render a live banner with selectable built-in font and horizontal layout.",
   "mode": "hybrid",
   "editable": true,
   "output": {
-    "type": "json"
+    "mode": "html",
+    "field": "html"
   }
 }

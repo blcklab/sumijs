@@ -1,5 +1,5 @@
 {
-  "description": "Render decoded RGBA pixels directly as an editable grayscale ASCII preview.",
+  "description": "Preview solid foreground and background colors with safe text emphasis.",
   "mode": "hybrid",
   "editable": true,
   "output": {

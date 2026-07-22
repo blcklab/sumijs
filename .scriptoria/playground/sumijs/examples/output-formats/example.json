@@ -1,8 +1,9 @@
 {
-  "description": "Reuse one immutable render result as plain text, ANSI, HTML, SVG, and JSON.",
+  "description": "Reuse one immutable result as plain text, ANSI, secure HTML Preview, SVG source, and JSON.",
   "mode": "hybrid",
   "editable": true,
   "output": {
-    "type": "json"
+    "mode": "html",
+    "field": "html"
   }
 }

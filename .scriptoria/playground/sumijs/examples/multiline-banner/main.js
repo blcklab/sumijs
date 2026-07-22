@@ -6,9 +6,14 @@ export function run({ module, inputs }) {
   })
 
   return {
+    html: result.toHTML({
+      ariaLabel: text.replace(/\n/gu, ', '),
+      inlineStyles: true,
+    }),
     source: text.split('\n'),
-    preview: result.toPlainText().split('\n'),
+    plain: result.toPlainText().split('\n'),
     width: result.width,
     height: result.height,
+    lineSpacing: Number(inputs.line),
   }
 }

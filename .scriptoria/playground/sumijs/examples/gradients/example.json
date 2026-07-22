@@ -1,8 +1,9 @@
 {
-  "description": "Attach validated gradient style metadata and generate browser-ready HTML.",
+  "description": "Preview validated foreground gradients with horizontal, vertical, or diagonal direction.",
   "mode": "hybrid",
   "editable": true,
   "output": {
-    "type": "json"
+    "mode": "html",
+    "field": "html"
   }
 }

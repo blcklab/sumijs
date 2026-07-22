@@ -1,6 +1,7 @@
 export function run({ module, inputs }) {
+  const text = String(inputs.text)
   const title = String(inputs.title).trim()
-  const result = module.renderText(String(inputs.text), {
+  const result = module.renderText(text, {
     font: inputs.font,
     frame: {
       style: inputs.frame,
@@ -11,12 +12,17 @@ export function run({ module, inputs }) {
   })
 
   return {
-    preview: result
-      .toPlainText({
-        preserveTrailingWhitespace: true,
-      })
+    html: result.toHTML({
+      ariaLabel: `${text} inside a ${inputs.frame} frame`,
+      inlineStyles: true,
+    }),
+    plain: result
+      .toPlainText({ preserveTrailingWhitespace: true })
       .split('\n'),
     width: result.width,
     height: result.height,
+    frame: inputs.frame,
+    title: title || null,
+    titleAlign: inputs.titlealign,
   }
 }

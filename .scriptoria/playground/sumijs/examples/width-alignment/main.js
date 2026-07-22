@@ -1,5 +1,6 @@
 export function run({ module, inputs }) {
-  const result = module.renderText(String(inputs.text), {
+  const text = String(inputs.text)
+  const result = module.renderText(text, {
     font: 'mini',
     width: Number(inputs.width),
     align: inputs.align,
@@ -11,10 +12,12 @@ export function run({ module, inputs }) {
   })
 
   return {
-    preview: result
-      .toPlainText({
-        preserveTrailingWhitespace: true,
-      })
+    html: result.toHTML({
+      ariaLabel: `${text}, ${inputs.align} aligned with ${inputs.overflow} overflow`,
+      inlineStyles: true,
+    }),
+    plain: result
+      .toPlainText({ preserveTrailingWhitespace: true })
       .split('\n'),
     width: result.width,
     height: result.height,

@@ -1,0 +1,69 @@
+[
+  {
+    "id": "text",
+    "label": "Text",
+    "type": "text",
+    "default": "STYLE",
+    "required": true
+  },
+  {
+    "id": "font",
+    "label": "Font",
+    "type": "select",
+    "default": "mini",
+    "options": [
+      {
+        "label": "Block",
+        "value": "block"
+      },
+      {
+        "label": "Slant",
+        "value": "slant"
+      },
+      {
+        "label": "Shadow",
+        "value": "shadow"
+      },
+      {
+        "label": "Mini",
+        "value": "mini"
+      },
+      {
+        "label": "Three D",
+        "value": "three-d"
+      }
+    ]
+  },
+  {
+    "id": "foreground",
+    "label": "Foreground color",
+    "type": "text",
+    "default": "#f8fafc",
+    "required": true
+  },
+  {
+    "id": "background",
+    "label": "Background color",
+    "type": "text",
+    "default": "#7c3aed",
+    "required": true
+  },
+  {
+    "id": "bold",
+    "label": "Bold",
+    "type": "checkbox",
+    "default": true
+  },
+  {
+    "id": "italic",
+    "label": "Italic",
+    "type": "checkbox",
+    "default": false
+  },
+  {
+    "id": "underline",
+    "label": "Underline",
+    "type": "checkbox",
+    "default": false
+  }
+]
