@@ -1,6 +1,6 @@
 {
   "name": "sumijs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A lightweight, tree-shakeable ASCII art toolkit for text, images, terminals, HTML, and SVG.",
   "type": "module",
   "main": "./dist/index.cjs",
