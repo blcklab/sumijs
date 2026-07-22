@@ -25,6 +25,11 @@ export function run({ module, inputs }) {
   return {
     html,
     text,
-    fonts: fonts.map(({ html: _html, ...font }) => font),
+    fonts: fonts.map((item) => ({
+      font: item.font,
+      width: item.width,
+      height: item.height,
+      preview: item.preview,
+    })),
   }
 }

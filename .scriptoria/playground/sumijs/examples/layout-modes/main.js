@@ -25,6 +25,11 @@ export function run({ module, inputs }) {
       .join(''),
     text,
     font,
-    layouts: layouts.map(({ html: _html, ...layout }) => layout),
+    layouts: layouts.map((item) => ({
+      layout: item.layout,
+      width: item.width,
+      height: item.height,
+      preview: item.preview,
+    })),
   }
 }

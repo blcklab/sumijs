@@ -43,6 +43,10 @@ export async function run({ module }) {
           `<div><p><strong>${item.charset}</strong> <small>${item.ramp}</small></p>${item.html}<br></div>`,
       )
       .join(''),
-    previews: previews.map(({ html: _html, ...preview }) => preview),
+    previews: previews.map((item) => ({
+      charset: item.charset,
+      ramp: item.ramp,
+      preview: item.preview,
+    })),
   }
 }
